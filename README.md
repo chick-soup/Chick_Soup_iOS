@@ -1,1 +1,1 @@
-Chick_Soup_iOS
+Chick-Soup-for-iOS
