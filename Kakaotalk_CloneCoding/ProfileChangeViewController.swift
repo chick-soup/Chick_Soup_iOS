@@ -19,7 +19,7 @@ class ProfileChangeViewController: UIViewController {
     
     let picker = UIImagePickerController()
     
-    
+    var selectedImage : UIImage = ProfileChangeViewController.imagePickerController(UIImagePickerController, didFinishPickingMediaWithInfo: UIImage)
     
     
     override func viewDidLoad() {
@@ -29,8 +29,8 @@ class ProfileChangeViewController: UIViewController {
     
     
     @IBAction func btnSetBackGroundImage(_ sender: Any) {
-        getBackGroundPhoto()
-        btnSetBackGroundImage.setImage(image)
+        setPhoto()
+        
     }
     
     @IBAction func btnSetProfile(_ sender: Any) {
@@ -92,7 +92,7 @@ class ProfileChangeViewController: UIViewController {
         }.resume()
     }
     
-    func getBackGroundPhoto() {
+    func setPhoto() {
         let alart = UIAlertController(title: "배경 사진", message: "사진 선택", preferredStyle: .actionSheet)
         
         let library = UIAlertAction(title: "사진엘범",style: .default) { (action) in self.openLibrary()
@@ -131,7 +131,7 @@ class ProfileChangeViewController: UIViewController {
 extension ProfileChangeViewController : UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        let image = info[UIImagePickerController.InfoKey.originalImage]
+        let image :UIImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         
         
         
