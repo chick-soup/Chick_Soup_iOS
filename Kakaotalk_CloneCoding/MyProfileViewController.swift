@@ -12,12 +12,27 @@ class MyProfileViewController: UIViewController {
     
     let myProfileUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/users/my/profile")
     
+    let refreshUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/refresh")
+    
+    var profileImage : UIImage = UIImage(imageLiteralResourceName: "http://chicksoup.s3.ap-northeast-2.amazonaws.com//media/image/user/profile/\(String(describing: UserDefaults.standard.string(forKey: "id"))).png")
+    
+    var backgroundImage : UIImage = UIImage(imageLiteralResourceName: "http://chicksoup.s3.ap-northeast-2.amazonaws.com//media/image/user/background/mobile/\(String(describing: UserDefaults.standard.string(forKey: "id"))).png")
+    
+    @IBOutlet weak var txtNickName: UILabel!
+    
+    
+    @IBOutlet weak var txtStatusMessage: UILabel!
+    
+    @IBOutlet weak var profileImageOutlet: UIButton!
+    
+    @IBOutlet weak var backgroundImageOutlet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        showMyProfile()
     }
     
-    func showMyProfile() {
+    func profileRequest() {
         
         var request = URLRequest(url: myProfileUrl!)
                 
@@ -44,6 +59,9 @@ class MyProfileViewController: UIViewController {
                         
                         UserDefaults.standard.set(jsonSerialization["status_message"], forKey: "status_message")
                         
+                    
+                        
+                        
                         print("본인 프로필 정보 반환 성공")
                         
                     case 401:
@@ -64,7 +82,7 @@ class MyProfileViewController: UIViewController {
                     }
                 }.resume()
     }
-    let refreshUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/refresh")
+    
 
     func tokenRefresh() {
         
@@ -106,6 +124,17 @@ class MyProfileViewController: UIViewController {
         }.resume()
     }
     
-    
+    func showMyProfile() {
+        txtNickName.text = UserDefaults.standard.string(forKey: "nickname")
+        
+        txtStatusMessage.text = UserDefaults.standard.string(forKey: "status_message")
+        
+        profileImageOutlet.setImage(profileImage, for: UIControl.State.normal)
+        
+        backgroundImageOutlet.setImage(backgroundImage, for: UIControl.State.normal)
+        
+        
+        
+    }
     
 }

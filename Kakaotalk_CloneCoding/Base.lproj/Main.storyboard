@@ -880,8 +880,10 @@
                     <tabBarItem key="tabBarItem" title="" image="Friend" id="T80-rC-jZu"/>
                     <navigationItem key="navigationItem" id="udu-3y-Cdg"/>
                     <connections>
-                        <outlet property="backgroundImageOutlet" destination="zmx-YO-Qxt" id="jB4-kU-esI"/>
-                        <outlet property="profileImageOutlet" destination="3qB-UX-IAJ" id="akW-co-jVl"/>
+                        <outlet property="backgroundImageOutlet" destination="zmx-YO-Qxt" id="voG-J5-ZRV"/>
+                        <outlet property="profileImageOutlet" destination="3qB-UX-IAJ" id="Qam-qv-acl"/>
+                        <outlet property="txtNickName" destination="XpP-am-BOE" id="vPN-Ls-sVf"/>
+                        <outlet property="txtStatusMessage" destination="08C-kE-NfL" id="EwT-Zi-wMm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhh-2v-8Kb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
