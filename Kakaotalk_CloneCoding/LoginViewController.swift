@@ -11,8 +11,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    let mainUrl =  URL(string: "https://chicksoup.s3.ap-northeast-2.amazonaws.com/")
-    let loginUrl = URL(string: "https://chicksoup.s3.ap-northeast-2.amazonaws.com/login")
+    let mainUrl =  URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/")
+    let loginUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/login")
     
     
     @IBOutlet weak var txtID: UITextField!

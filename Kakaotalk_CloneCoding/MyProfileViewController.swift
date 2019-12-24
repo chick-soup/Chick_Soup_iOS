@@ -10,7 +10,7 @@ import UIKit
 
 class MyProfileViewController: UIViewController {
     
-    let myProfileUrl = URL(string: "https://chicksoup.s3.ap-northeast-2.amazonaws.com/users/my/profile")
+    let myProfileUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/users/my/profile")
     
     
     override func viewDidLoad() {
@@ -64,7 +64,7 @@ class MyProfileViewController: UIViewController {
                     }
                 }.resume()
     }
-    let refreshUrl = URL(string: "https://chicksoup.s3.ap-northeast-2.amazonaws.com/refresh")
+    let refreshUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/refresh")
 
     func tokenRefresh() {
         

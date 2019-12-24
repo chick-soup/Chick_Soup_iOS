@@ -15,7 +15,7 @@ class NickNameSetViewController: UIViewController {
     
     @IBOutlet weak var txtNickname: UITextField!
     
-    var profileUrl = URL(string: "https://chicksoup.s3.ap-northeast-2.amazonaws.com/signup/profile")
+    var profileUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/signup/profile")
     
     override func viewDidLoad() {
         nickNameSetView.layer.cornerRadius = 7
