@@ -11,7 +11,7 @@ import UIKit
 
 let refreshUrl = URL(string: "https://chicksoup.s3.ap-northeast-2.amazonaws.com/refresh")
 
-func tokenRefresh() {
+    func tokenRefresh() {
         
         var request = URLRequest(url: refreshUrl!)
         
@@ -36,8 +36,8 @@ func tokenRefresh() {
             case 401:
                 print("request의 header에 Authorization으로 JWT를 포함하지 않았거나 빈 문자열을 줌")
                 
-//            case 403:
-//                print("사용 가능 기간이 만료된 JWT")
+                //            case 403:
+                //                print("사용 가능 기간이 만료된 JWT")
                 
             case 404:
                 print("JWT로 인증된 사용자가 실제로는 존재하지 않음")
@@ -50,3 +50,5 @@ func tokenRefresh() {
             }
         }.resume()
     }
+    
+}

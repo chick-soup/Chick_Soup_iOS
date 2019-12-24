@@ -64,8 +64,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
-            landmarkName = "btnSetProfileImage(_:)"
-            landmarkType = "7">
+            landmarkName = "ProfileChangeViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -82,6 +82,98 @@
             endingLineNumber = "16"
             landmarkName = "ProfileChangeViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "DAD0FE9C-295F-4C93-9147-D4183E2AEA58 - cbf710694b28e09f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kakaotalk_CloneCoding.ProfileChangeViewController.txtStatusMessage.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Kakaotalk_CloneCoding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dohyunkim/Desktop/Chick_Soup_iOS/Kakaotalk_CloneCoding/ProfileChangeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "DAD0FE9C-295F-4C93-9147-D4183E2AEA58 - 355ed6ef660edc8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kakaotalk_CloneCoding.ProfileChangeViewController.txtStatusMessage.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Kakaotalk_CloneCoding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dohyunkim/Desktop/Chick_Soup_iOS/Kakaotalk_CloneCoding/ProfileChangeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "DAD0FE9C-295F-4C93-9147-D4183E2AEA58 - 65cafbe97bde668f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kakaotalk_CloneCoding.ProfileChangeViewController.txtStatusMessage.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "Kakaotalk_CloneCoding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dohyunkim/Desktop/Chick_Soup_iOS/Kakaotalk_CloneCoding/ProfileChangeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "DAD0FE9C-295F-4C93-9147-D4183E2AEA58 - f195950bfbe63752"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kakaotalk_CloneCoding.ProfileChangeViewController.txtStatusMessage.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Kakaotalk_CloneCoding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dohyunkim/Desktop/Chick_Soup_iOS/Kakaotalk_CloneCoding/ProfileChangeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "DAD0FE9C-295F-4C93-9147-D4183E2AEA58 - 124a24c90558584"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kakaotalk_CloneCoding.ProfileChangeViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Kakaotalk_CloneCoding.ProfileChangeViewController"
+                  moduleName = "Kakaotalk_CloneCoding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dohyunkim/Desktop/Chick_Soup_iOS/Kakaotalk_CloneCoding/ProfileChangeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "303">
+               </Location>
+               <Location
+                  uuid = "DAD0FE9C-295F-4C93-9147-D4183E2AEA58 - 57c069268ecc0ec7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kakaotalk_CloneCoding.ProfileChangeViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Kakaotalk_CloneCoding.ProfileChangeViewController&gt;"
+                  moduleName = "Kakaotalk_CloneCoding"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dohyunkim/Desktop/Chick_Soup_iOS/Kakaotalk_CloneCoding/ProfileChangeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "259">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -96,8 +188,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
             endingLineNumber = "35"
-            landmarkName = "ProfileChangeViewController"
-            landmarkType = "3">
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
