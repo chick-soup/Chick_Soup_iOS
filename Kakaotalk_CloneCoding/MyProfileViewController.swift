@@ -24,6 +24,7 @@ class MyProfileViewController: UIViewController {
                 request.addValue("application/json", forHTTPHeaderField: "Content-Type")
                 request.addValue("application/json", forHTTPHeaderField: "Accept")
                 request.addValue("application/json", forHTTPHeaderField: "access_token")
+                request.addValue("application/json", forHTTPHeaderField: "multipart/form-data")
                 request.addValue("Authorization", forHTTPHeaderField: String(UserDefaults.standard.string(forKey :"refresh_token")!))
                 
                 request.httpMethod = "GET"

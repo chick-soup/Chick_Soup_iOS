@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -774,6 +774,9 @@
                                         <rect key="frame" x="146" y="-65" width="122" height="121"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="ProfilePicture"/>
+                                        <connections>
+                                            <action selector="btnSetProfileImage:" destination="M1Y-0Q-x8y" eventType="touchUpInside" id="5A0-0p-QNY"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Npc-Ae-159">
                                         <rect key="frame" x="87" y="113" width="240" height="30"/>
@@ -813,6 +816,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="aWc-se-0yh"/>
                     <connections>
+                        <outlet property="backgroundImageOutlet" destination="oCY-t8-YSY" id="XGR-EO-Awu"/>
+                        <outlet property="profileImageOutlet" destination="dt7-J6-5xZ" id="wRR-we-vOt"/>
                         <outlet property="txtNickname" destination="r3s-un-ghg" id="2xU-HU-b1K"/>
                         <outlet property="txtStatusMessage" destination="7Jd-If-PxI" id="uMt-8l-eM0"/>
                     </connections>
@@ -821,10 +826,10 @@
             </objects>
             <point key="canvasLocation" x="1637.68115942029" y="-1513.3928571428571"/>
         </scene>
-        <!--Profile Change View Controller-->
+        <!--My Profile View Controller-->
         <scene sceneID="oaB-Js-tyH">
             <objects>
-                <viewController id="JW4-Zb-Dll" customClass="ProfileChangeViewController" customModule="Kakaotalk_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JW4-Zb-Dll" customClass="MyProfileViewController" customModule="Kakaotalk_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dqY-Cb-fI9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -874,6 +879,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Friend" id="T80-rC-jZu"/>
                     <navigationItem key="navigationItem" id="udu-3y-Cdg"/>
+                    <connections>
+                        <outlet property="backgroundImageOutlet" destination="zmx-YO-Qxt" id="jB4-kU-esI"/>
+                        <outlet property="profileImageOutlet" destination="3qB-UX-IAJ" id="akW-co-jVl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhh-2v-8Kb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

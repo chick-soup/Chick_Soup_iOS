@@ -15,11 +15,16 @@ class ProfileChangeViewController: UIViewController {
     
     @IBOutlet weak var txtStatusMessage: UITextField!
     
+    @IBOutlet weak var backgroundImageOutlet: UIButton!
+    
+    @IBOutlet weak var profileImageOutlet: UIButton!
+    
     var profileUrl = URL(string: "https://chicksoup.s3.ap-northeast-2.amazonaws.com/users/my/profile")
     
     let picker = UIImagePickerController()
     
-    var selectedImage : UIImage = ProfileChangeViewController.imagePickerController(UIImagePickerController, didFinishPickingMediaWithInfo: UIImage)
+    
+    var selectedImage : UIImage = UIImage(named: "ProfileBackground")!
     
     
     override func viewDidLoad() {
@@ -30,26 +35,38 @@ class ProfileChangeViewController: UIViewController {
     
     @IBAction func btnSetBackGroundImage(_ sender: Any) {
         setPhoto()
-        
+        backgroundImageChanger()
+    }
+    
+    @IBAction func btnSetProfileImage(_ sender: Any) {
+        setPhoto()
+        profileImageChanger()
     }
     
     @IBAction func btnSetProfile(_ sender: Any) {
-        setProfile()
+        
     }
     
     func setProfile() {
+        
+        let profileImage : UIImage = profileImageOutlet!.image(for: .normal)!
+        
+        
+        
+        let backgroundImage : UIImage = backgroundImageOutlet!.image(for: .normal)!
+        
+        
+        
         var request = URLRequest(url: profileUrl!)
         
-        let parameters = ["nickname": txtNickname.text!, "status_message": txtStatusMessage.text!, "where": "mobile"
-            
-            //            , "profile": 프로필 사진 들어가야함, "background": 배경사진 들어가야함
-            
-        ]
+        let parameters = ["nickname": txtNickname.text!, "status_message": txtStatusMessage.text!, "where": "mobile", "profile": profileImage , "background": backgroundImage
+            ] as [String : Any]
         
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue("application/json", forHTTPHeaderField: "access_token")
+        request.addValue("application/json", forHTTPHeaderField: "multipart/form-data")
         
         
         request.addValue("Authorization", forHTTPHeaderField: String(UserDefaults.standard.string(forKey :"access_token")!))
@@ -135,12 +152,28 @@ extension ProfileChangeViewController : UIImagePickerControllerDelegate {
         
         
         
-                    print(info)
+        print(info)
+        
+        selectedImage = image
         
         dismiss(animated: true, completion: nil)
+        
     }
     
+    func backgroundImageChanger() {
+        
+        backgroundImageOutlet.setImage(selectedImage, for: UIControl.State.normal)
+        
+    }
+    
+    func profileImageChanger() {
+        
+        profileImageOutlet.setImage(selectedImage, for: UIControl.State.normal)
+        
+    }
 }
+
+
 
 
 
