@@ -14,4 +14,6 @@ class FriendViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
 }
+
