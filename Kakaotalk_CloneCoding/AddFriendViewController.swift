@@ -11,7 +11,14 @@ import UIKit
 
 class AddFriendViewController: UIViewController {
     
+    @IBOutlet weak var searchBar: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func btnSearch(_ sender: Any) {
+        
     }
 }

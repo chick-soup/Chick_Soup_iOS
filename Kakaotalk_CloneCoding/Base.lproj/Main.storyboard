@@ -198,13 +198,16 @@
                                 <state key="normal" image="SearchBtn2">
                                     <color key="titleColor" red="0.23137254901960785" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSearch:" destination="WNV-Nb-Xrx" eventType="touchUpInside" id="X7i-qC-hZ0"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c20-Id-0fz">
                                 <rect key="frame" x="0.0" y="345" width="427" height="497"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="72" id="euE-Zf-etr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="72" id="euE-Zf-etr" customClass="FriendAddList" customModule="Kakaotalk_CloneCoding" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="427" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="euE-Zf-etr" id="Pzd-JS-R3b">
@@ -236,6 +239,12 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addFriendImage" destination="zoc-cP-mdV" id="Es3-Ym-0pS"/>
+                                            <outlet property="friendAddImage" destination="zoc-cP-mdV" id="PLi-Vg-bNZ"/>
+                                            <outlet property="friendAddNickname" destination="M0m-Mh-QgV" id="Rjg-rV-7at"/>
+                                            <outlet property="friendAddStatusMessage" destination="8Gk-0Y-en6" id="1wz-tu-hCk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -266,6 +275,9 @@
                         <viewLayoutGuide key="safeArea" id="6yu-7K-eVq"/>
                     </view>
                     <navigationItem key="navigationItem" id="MzS-zB-Ywx"/>
+                    <connections>
+                        <outlet property="searchBar" destination="xNY-hC-D77" id="fjH-FA-KVf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qH8-f9-EwE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

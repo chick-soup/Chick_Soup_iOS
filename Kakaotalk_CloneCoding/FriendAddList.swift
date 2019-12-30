@@ -6,4 +6,32 @@
 //  Copyright © 2019 DohyunKim. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class FriendAddListCell: UITableViewCell {
+    
+    
+    var friendaddlist: FriendAddList = FriendAddList()
+    
+    
+    
+    
+}
+
+
+
+class FriendAddList: FriendListCell {
+
+    @IBOutlet weak var friendAddImage: UIImageView!
+    @IBOutlet weak var friendAddNickname: UILabel!
+    @IBOutlet weak var friendAddStatusMessage: UILabel!
+    
+    var friendaddCell: UITableViewCell {
+        friendAddImage.image = UIImage()
+        friendAddNickname.text = ""
+        friendAddStatusMessage.text = ""
+        return UITableViewCell()
+    }
+
+}
+
