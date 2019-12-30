@@ -232,15 +232,16 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hq-yD-ueQ">
-                                                    <rect key="frame" x="351" y="34" width="30" height="5"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Xp-qn-n11">
+                                                    <rect key="frame" x="344" y="21" width="30" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" image="MoreInfoBtn"/>
+                                                    <state key="normal" title="추가"/>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="addFriendImage" destination="zoc-cP-mdV" id="Es3-Ym-0pS"/>
+                                            <outlet property="btnRelate" destination="4Xp-qn-n11" id="nPC-J2-LHp"/>
                                             <outlet property="friendAddImage" destination="zoc-cP-mdV" id="PLi-Vg-bNZ"/>
                                             <outlet property="friendAddNickname" destination="M0m-Mh-QgV" id="Rjg-rV-7at"/>
                                             <outlet property="friendAddStatusMessage" destination="8Gk-0Y-en6" id="1wz-tu-hCk"/>

@@ -8,6 +8,10 @@
 
 import UIKit
 
+var friendAddId : String = ""
+var friendAddNickName : String = ""
+var friendAddRelate : String = ""
+
 class FriendAddListCell: UITableViewCell {
     
     
@@ -18,6 +22,9 @@ class FriendAddListCell: UITableViewCell {
     
 }
 
+func relateConvertor() -> String {
+    <#function body#>
+}
 
 
 class FriendAddList: FriendListCell {
@@ -25,11 +32,12 @@ class FriendAddList: FriendListCell {
     @IBOutlet weak var friendAddImage: UIImageView!
     @IBOutlet weak var friendAddNickname: UILabel!
     @IBOutlet weak var friendAddStatusMessage: UILabel!
+    @IBOutlet weak var btnRelate: UIButton!
     
     var friendaddCell: UITableViewCell {
         friendAddImage.image = UIImage()
-        friendAddNickname.text = ""
-        friendAddStatusMessage.text = ""
+        friendAddNickname.text = friendAddNickName
+        btnRelate.setTitle("", for: .normal)
         return UITableViewCell()
     }
 
