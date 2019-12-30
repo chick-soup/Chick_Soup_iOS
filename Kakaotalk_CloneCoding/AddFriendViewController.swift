@@ -21,4 +21,7 @@ class AddFriendViewController: UIViewController {
     @IBAction func btnSearch(_ sender: Any) {
         
     }
+    func sendFriendRequest() {
+        
+    }
 }
