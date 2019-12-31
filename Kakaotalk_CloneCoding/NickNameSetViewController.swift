@@ -29,11 +29,11 @@ class NickNameSetViewController: UIViewController {
     func signupProfile() {
         
         let parameters = ["nickname": txtNickname.text!]
-
+        
         var request = URLRequest(url: profileUrl!)
-
+        
         request.httpMethod = "POST"
-
+        
         do {
             request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
         } catch let error {
@@ -55,7 +55,7 @@ class NickNameSetViewController: UIViewController {
                 print("\(jsonSerialization)")
                 
                 print("해당 사용자의 닉네임 설정 성공")
-               
+                
             default:
                 DispatchQueue.main.async {
                     print((res as! HTTPURLResponse).statusCode)
