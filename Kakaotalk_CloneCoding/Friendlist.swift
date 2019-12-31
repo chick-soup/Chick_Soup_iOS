@@ -11,6 +11,8 @@ import UIKit
 
 
 
+var friendListPhotoID:String = ""
+var friendListProfileImage : UIImage = UIImage(imageLiteralResourceName: "http://chicksoup.s3.ap-northeast-2.amazonaws.com//media/image/user/profile/\(friendListPhotoID).png")
 
 class FriendListCell: UITableViewCell {
     
@@ -24,6 +26,7 @@ class FriendListCell: UITableViewCell {
     var friendListMute: String = ""
     var friendListHidden: String = ""
     var friendListBookmark: String = ""
+   
     
     
     var friendlist: FriendList = FriendList()
@@ -32,13 +35,17 @@ class FriendListCell: UITableViewCell {
     
     
 }
-
+ 
 class FriendList: FriendListCell {
     
+   
+    
+    
+    
     var friendCell: UITableViewCell {
-        userImage.image = UIImage()
-        nickName.text = ""
-        statusMessage.text = ""
+        userImage.image = friendListProfileImage
+        nickName.text = friendListNickName
+        statusMessage.text = friendListStatusMessage
         return UITableViewCell()
     }
     

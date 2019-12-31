@@ -11,8 +11,8 @@ import UIKit
 
 class FriendViewController: UIViewController {
     let friendListUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/users/my/friends")
-    
-    var ListData: Any = ""
+    var friendListData = FriendListCell()
+    var ListData: Any = [[String: [String: Any]]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,7 +80,7 @@ class FriendViewController: UIViewController {
                 let jsonSerialization = try! JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
                 print(jsonSerialization)
                 
-                self!.ListData = jsonSerialization
+                self!.ListData = [jsonSerialization]
                 
                 print("내 친구 정보 반환 성공")
             case 401:
@@ -103,8 +103,45 @@ class FriendViewController: UIViewController {
         
     }
     
-    func listDataIndexing() {
+    func FriendListIDIndexing() {
+        let ListdataArray: Array = [ListData]
+        for i in ListdataArray {
+            friendListData.friendListID = String("\(i as! [String:Any]).values[\"id\"]")
+            friendListPhotoID = String("\(i as! [String:Any]).values[\"id\"]")
+            }
+        }
+    func FriendListNickNameIndexing() {
+        let ListdataArray: Array = [ListData]
+        for i in ListdataArray {
+             friendListData.friendListNickName = String("\(i as! [String:Any]).values[\"nickname\"]")
+        }
+       
         
     }
-}
+    func FriendListStatusMessageIndexing() {
+        let ListdataArray: Array = [ListData]
+        for i in ListdataArray {
+            friendListData.friendListStatusMessage = String("\(i as! [String:Any]).values[\"status_message\"]")
+        }
+    }
+        func FriendListMute() {
+            let ListdataArray: Array = [ListData]
+            for i in ListdataArray {
+                friendListData.friendListMute = String("\(i as! [String:Any]).values[\"mute\"]")
+            }
+        }
+    func FriendListHidden() {
+        let ListdataArray: Array = [ListData]
+        for i in ListdataArray {
+            friendListData.friendListHidden = String("\(i as! [String:Any]).values[\"hidden\"]")
+        }
+    }
+    func FriendListBookmark() {
+           let ListdataArray: Array = [ListData]
+           for i in ListdataArray {
+               friendListData.friendListBookmark = String("\(i as! [String:Any]).values[\"bookmark\"]")
+           }
+    }
 
+
+}
