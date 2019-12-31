@@ -16,4 +16,7 @@ class FriendViewController: UIViewController {
     }
     
 }
+func bringFriendData() {
+    
+}
 

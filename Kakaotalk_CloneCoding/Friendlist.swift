@@ -30,3 +30,5 @@ class FriendList: FriendListCell {
     }
     
 }
+
+
