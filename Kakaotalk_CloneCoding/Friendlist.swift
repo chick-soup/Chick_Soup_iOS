@@ -7,16 +7,28 @@
 //
 
 import UIKit
+
+
+
+
+
 class FriendListCell: UITableViewCell {
     
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var nickName: UILabel!
     @IBOutlet weak var statusMessage: UILabel!
     
-    var friendlist: FriendList = FriendList()
-    
     var friendListID: String = ""
     var friendListNickName: String = ""
+    var friendListStatusMessage: String = ""
+    var friendListMute: String = ""
+    var friendListHidden: String = ""
+    var friendListBookmark: String = ""
+    
+    
+    var friendlist: FriendList = FriendList()
+    
+    
     
     
 }

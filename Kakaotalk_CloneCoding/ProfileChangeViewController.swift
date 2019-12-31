@@ -20,9 +20,7 @@ class ProfileChangeViewController: UIViewController {
     @IBOutlet weak var profileImageOutlet: UIButton!
     
     let profileUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/users/my/profile")
-    
-    let refreshUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/refresh")
-    
+        
     let picker = UIImagePickerController()
     
     

@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     let mainUrl =  URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/")
     let loginUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/login")
     let kakaoUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/users/my/kakao-id")
-    let refreshUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/refresh")
+    
     
     
     @IBOutlet weak var txtID: UITextField!
@@ -130,7 +130,7 @@ class LoginViewController: UIViewController {
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue("application/json", forHTTPHeaderField: "access_token")
-        request.addValue("Authorization", forHTTPHeaderField: String(UserDefaults.standard.string(forKey :"refresh_token")!))
+        request.addValue("Authorization", forHTTPHeaderField: String(UserDefaults.standard.string(forKey :"access_token")!))
         
         request.httpMethod = "GET"
         URLSession.shared.dataTask(with: request){

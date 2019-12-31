@@ -11,9 +11,7 @@ import UIKit
 
 class AddFriendViewController: UIViewController {
     
-    @IBOutlet weak var searchBar: UITextField!
-    let refreshUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/refresh")
-    
+    @IBOutlet weak var searchBar: UITextField!    
     
     
     override func viewDidLoad() {

@@ -11,9 +11,7 @@ import UIKit
 class MyProfileViewController: UIViewController {
     
     let myProfileUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/users/my/profile")
-    
-    let refreshUrl = URL(string: "http://chicksoup.s3.ap-northeast-2.amazonaws.com/refresh")
-    
+        
     
     var profileImage : UIImage = UIImage(imageLiteralResourceName: "http://chicksoup.s3.ap-northeast-2.amazonaws.com//media/image/user/profile/\(String(describing: UserDefaults.standard.string(forKey: "id"))).png")
     
@@ -41,7 +39,7 @@ class MyProfileViewController: UIViewController {
                 request.addValue("application/json", forHTTPHeaderField: "Accept")
                 request.addValue("application/json", forHTTPHeaderField: "access_token")
                 request.addValue("application/json", forHTTPHeaderField: "multipart/form-data")
-                request.addValue("Authorization", forHTTPHeaderField: String(UserDefaults.standard.string(forKey :"refresh_token")!))
+                request.addValue("Authorization", forHTTPHeaderField: String(UserDefaults.standard.string(forKey :"access_token")!))
                 
                 request.httpMethod = "GET"
                 URLSession.shared.dataTask(with: request){
