@@ -15,7 +15,8 @@ class FriendListCell: UITableViewCell {
     
     var friendlist: FriendList = FriendList()
     
-    
+    var friendListID: String = ""
+    var friendListNickName: String = ""
     
     
 }
