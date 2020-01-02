@@ -17,6 +17,7 @@ class FriendViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bringFriendData()
+        
     }
     
     func tokenRefresh() {
@@ -81,6 +82,12 @@ class FriendViewController: UIViewController {
                 print(jsonSerialization)
                 
                 self!.ListData = [jsonSerialization]
+                self!.FriendListIDIndexing()
+                self!.FriendListMuteIndexing()
+                self!.FriendListHiddenIndexing()
+                self!.FriendListBookmarkIndexing()
+                self!.FriendListNickNameIndexing()
+                self!.FriendListStatusMessageIndexing()
                 
                 print("내 친구 정보 반환 성공")
             case 401:
@@ -124,19 +131,19 @@ class FriendViewController: UIViewController {
             friendListData.friendListStatusMessage = String("\(i as! [String:Any]).values[\"status_message\"]")
         }
     }
-        func FriendListMute() {
+        func FriendListMuteIndexing() {
             let ListdataArray: Array = [ListData]
             for i in ListdataArray {
                 friendListData.friendListMute = String("\(i as! [String:Any]).values[\"mute\"]")
             }
         }
-    func FriendListHidden() {
+    func FriendListHiddenIndexing() {
         let ListdataArray: Array = [ListData]
         for i in ListdataArray {
             friendListData.friendListHidden = String("\(i as! [String:Any]).values[\"hidden\"]")
         }
     }
-    func FriendListBookmark() {
+    func FriendListBookmarkIndexing() {
            let ListdataArray: Array = [ListData]
            for i in ListdataArray {
                friendListData.friendListBookmark = String("\(i as! [String:Any]).values[\"bookmark\"]")

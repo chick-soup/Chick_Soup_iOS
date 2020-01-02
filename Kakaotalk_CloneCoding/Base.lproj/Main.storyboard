@@ -1007,10 +1007,10 @@
             </objects>
             <point key="canvasLocation" x="1638" y="137"/>
         </scene>
-        <!--View Controller-->
+        <!--Block Manage View Controller-->
         <scene sceneID="L6Z-yF-Dso">
             <objects>
-                <viewController id="Y41-no-S3P" sceneMemberID="viewController">
+                <viewController id="Y41-no-S3P" customClass="BlockManageViewController" customModule="Kakaotalk_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ylG-XU-yds">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1024,10 +1024,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="da8-gF-ruE">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="da8-gF-ruE" customClass="friendBlockListCell" customModule="Kakaotalk_CloneCoding" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="da8-gF-ruE" id="uTx-sN-CfU">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="da8-gF-ruE" id="uTx-sN-CfU" customClass="UITableViewCell">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -1056,6 +1056,11 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="friendBlockListImageOutlet" destination="bxT-Qm-8MN" id="5Kp-Je-Pc0"/>
+                                            <outlet property="friendBlockListNickNameOutlet" destination="rQe-Yb-7ZA" id="xTH-uA-ZGe"/>
+                                            <outlet property="friendBlockListStatusMessageOutlet" destination="wlc-H4-VWn" id="Wz8-0P-UEB"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
