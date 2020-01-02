@@ -42,4 +42,8 @@ class SettingViewController: UIViewController {
         
         super.viewDidLoad()
     }
+    
+    func logout() {
+        UserDefaults.standard.set("", forKey: "access_token")
+    }
 }

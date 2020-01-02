@@ -17,7 +17,10 @@ class IDCheckViewController: UIViewController {
     
     override func viewDidLoad() {
         IDCheckView.layer.cornerRadius = 7
+        txtIdCheck.text! = UserDefaults.standard.string(forKey: "kakao_id")!
+        
+        //kakao-id 안들어오면 UserDefaults에 추가했는지 확인하기!
+        
         super.viewDidLoad()
     }
-
 }
