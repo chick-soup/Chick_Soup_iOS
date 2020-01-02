@@ -13,8 +13,11 @@ class IDCheckViewController: UIViewController {
     
     @IBOutlet weak var IDCheckView: UIView!
     
+    @IBOutlet weak var txtIdCheck: UILabel!
+    
     override func viewDidLoad() {
         IDCheckView.layer.cornerRadius = 7
         super.viewDidLoad()
     }
+
 }

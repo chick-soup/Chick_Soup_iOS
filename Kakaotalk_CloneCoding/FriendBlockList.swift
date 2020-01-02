@@ -37,7 +37,7 @@ class friendBlockList: friendBlockListCell {
     
     var friendBlockCell: UITableViewCell {
         
-        friendBlockListImageOutlet.image = UIImage()
+        friendBlockListImageOutlet.image = friendBlockListProfileImage
         friendBlockListNickNameOutlet.text = friendBlockListNickName
         friendBlockListStatusMessageOutlet.text = friendBlockListStatusMessage
         return UITableViewCell()

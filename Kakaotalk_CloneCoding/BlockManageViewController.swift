@@ -88,7 +88,7 @@ class BlockManageViewController: UIViewController {
                 self!.FriendBlockListMuteIndexing()
                 self!.FriendBlockListNickNameIndexing()
                 self!.FriendBlockListStatusMessageIndexing()
-                print("내 친구 정보 반환 성공")
+                print("친구 차단 정보 반환 성공")
             case 401:
                 print("request의 header에 Authorization으로 JWT를 포함하지 않았거나 빈 문자열을 줌")
                 

@@ -763,6 +763,7 @@
                     <navigationItem key="navigationItem" id="Zfy-HC-Tma"/>
                     <connections>
                         <outlet property="IDCheckView" destination="eCN-Fl-eMP" id="87i-eA-XgU"/>
+                        <outlet property="txtIdCheck" destination="jFj-8V-cZ2" id="DUx-C7-Sxg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4jd-aB-wfH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -972,6 +973,8 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="friendHiddenListImageOutlet" destination="Hx7-PE-tfb" id="BDh-y9-loj"/>
+                                            <outlet property="friendHiddenListNickNameOutlet" destination="Hx7-PE-tfb" id="H5e-iY-wue"/>
+                                            <outlet property="friendHiddenListStatusMessageOutlet" destination="1BG-VH-Blr" id="AQ5-RY-kNR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
