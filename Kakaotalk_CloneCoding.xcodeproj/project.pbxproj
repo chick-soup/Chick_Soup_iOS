@@ -31,7 +31,7 @@
 		47E091C023B47D6900BD7775 /* FriendAddList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E091BF23B47D6900BD7775 /* FriendAddList.swift */; };
 		47E091C223BAE83100BD7775 /* FriendBlockList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E091C123BAE83100BD7775 /* FriendBlockList.swift */; };
 		47E091C423BAEBB300BD7775 /* refreshUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E091C323BAEBB300BD7775 /* refreshUrl.swift */; };
-		47E091C623BDDD9300BD7775 /* FriendHideList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E091C523BDDD9300BD7775 /* FriendHideList.swift */; };
+		47E091C623BDDD9300BD7775 /* FriendHiddenList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E091C523BDDD9300BD7775 /* FriendHiddenList.swift */; };
 		47E091C823BDDE6400BD7775 /* HiddenManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E091C723BDDE6400BD7775 /* HiddenManageViewController.swift */; };
 		764796986800632AF3CFFDF5 /* Pods_Kakaotalk_CloneCodingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7E2B49B7A77CC5BB7919D6 /* Pods_Kakaotalk_CloneCodingTests.framework */; };
 		E5E320C8EB6309770D78E60C /* Pods_Kakaotalk_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092A185010355EF55D11FDFF /* Pods_Kakaotalk_CloneCoding.framework */; };
@@ -88,7 +88,7 @@
 		47E091BF23B47D6900BD7775 /* FriendAddList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendAddList.swift; sourceTree = "<group>"; };
 		47E091C123BAE83100BD7775 /* FriendBlockList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendBlockList.swift; sourceTree = "<group>"; };
 		47E091C323BAEBB300BD7775 /* refreshUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = refreshUrl.swift; sourceTree = "<group>"; };
-		47E091C523BDDD9300BD7775 /* FriendHideList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendHideList.swift; sourceTree = "<group>"; };
+		47E091C523BDDD9300BD7775 /* FriendHiddenList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendHiddenList.swift; sourceTree = "<group>"; };
 		47E091C723BDDE6400BD7775 /* HiddenManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenManageViewController.swift; sourceTree = "<group>"; };
 		62D70D386A51227C84FC8342 /* Pods-Kakaotalk_CloneCoding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakaotalk_CloneCoding.release.xcconfig"; path = "Target Support Files/Pods-Kakaotalk_CloneCoding/Pods-Kakaotalk_CloneCoding.release.xcconfig"; sourceTree = "<group>"; };
 		7FBD54E1DFD69B40237F0705 /* Pods-Kakaotalk_CloneCoding-Kakaotalk_CloneCodingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakaotalk_CloneCoding-Kakaotalk_CloneCodingUITests.release.xcconfig"; path = "Target Support Files/Pods-Kakaotalk_CloneCoding-Kakaotalk_CloneCodingUITests/Pods-Kakaotalk_CloneCoding-Kakaotalk_CloneCodingUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 				4723B1FD238E7DE800C66761 /* LoginViewController.swift */,
 				4723B229238E862200C66761 /* SignupViewController.swift */,
 				4723B22B238E8D1300C66761 /* FriendViewController.swift */,
-				47E091C523BDDD9300BD7775 /* FriendHideList.swift */,
+				47E091C523BDDD9300BD7775 /* FriendHiddenList.swift */,
 				4723B22D238E8D9400C66761 /* ChatViewController.swift */,
 				4723B1FF238E7DE800C66761 /* Main.storyboard */,
 				47E091C723BDDE6400BD7775 /* HiddenManageViewController.swift */,
@@ -474,7 +474,7 @@
 				47E091C023B47D6900BD7775 /* FriendAddList.swift in Sources */,
 				47E091C823BDDE6400BD7775 /* HiddenManageViewController.swift in Sources */,
 				4723B230238EB11C00C66761 /* SettingViewController.swift in Sources */,
-				47E091C623BDDD9300BD7775 /* FriendHideList.swift in Sources */,
+				47E091C623BDDD9300BD7775 /* FriendHiddenList.swift in Sources */,
 				47D0AFD12395581D0045DBD3 /* NickNameSetViewController.swift in Sources */,
 				4723B22C238E8D1300C66761 /* FriendViewController.swift in Sources */,
 				47E091BE23B43B6B00BD7775 /* Friendlist.swift in Sources */,

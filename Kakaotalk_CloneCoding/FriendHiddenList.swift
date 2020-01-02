@@ -11,6 +11,7 @@ import UIKit
 
 var friendHideListPhotoID: String = ""
 
-class friendHideListCell: UITableViewCell {
+class friendHiddenListCell: UITableViewCell {
     
+    @IBOutlet weak var friendHiddenListImageOutlet: UIImageView!
 }

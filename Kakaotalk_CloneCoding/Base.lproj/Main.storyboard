@@ -914,10 +914,10 @@
             </objects>
             <point key="canvasLocation" x="1637.68115942029" y="-664.28571428571422"/>
         </scene>
-        <!--Block Manage View Controller-->
+        <!--Hidden Manage View Controller-->
         <scene sceneID="IlV-vn-HI5">
             <objects>
-                <viewController id="IHn-2v-f4t" customClass="BlockManageViewController" customModule="Kakaotalk_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IHn-2v-f4t" customClass="HiddenManageViewController" customModule="Kakaotalk_CloneCoding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GTu-6f-YE1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -938,7 +938,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="72" id="ggr-Mz-afi" customClass="friendHideListCell" customModule="Kakaotalk_CloneCoding" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="72" id="ggr-Mz-afi" customClass="friendHiddenListCell" customModule="Kakaotalk_CloneCoding" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ggr-Mz-afi" id="OY7-0l-TXt">
@@ -970,6 +970,9 @@
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="friendHiddenListImageOutlet" destination="Hx7-PE-tfb" id="BDh-y9-loj"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -1108,6 +1111,6 @@
         <image name="mainLogo" width="250" height="207.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="p5k-Ij-cik"/>
+        <segue reference="pR7-HZ-09e"/>
     </inferredMetricsTieBreakers>
 </document>
