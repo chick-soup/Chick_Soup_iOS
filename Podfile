@@ -9,7 +9,7 @@ target 'Kakaotalk_CloneCoding' do
 
 pod 'RxSwift'
 pod 'RxCocoa'
-
+pod 'Socket.IO-Client-Swift', '~> 15.2.0'
   target 'Kakaotalk_CloneCodingTests' do
     inherit! :search_paths
     # Pods for testing
